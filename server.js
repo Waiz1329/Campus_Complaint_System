@@ -1,7 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const dns = require('dns');
 
 require('dotenv').config();
+dns.setServers([
+    '8.8.8.8',
+    '8.8.4.4'
+]);
 
 const app = express();
 app.use(express.json());
@@ -469,4 +474,6 @@ app.delete
     }
 );
 
-module.exports = app;
+app.listen(5000, () => {
+    console.log('Server is running on port 5000');
+});
