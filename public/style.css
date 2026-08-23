@@ -1,0 +1,1021 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    background: lavender;
+    color: indigo;
+}
+
+#homePage 
+{
+    min-height: 100vh;
+    background: lavender;
+}
+
+.navbar 
+{
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid plum;
+}
+
+.logo
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.logo::before 
+{
+    content: "● ";
+    color: purple;
+}
+
+.nav-links 
+{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links button 
+{
+    width: auto;
+    margin: 0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: transparent;
+    color: indigo;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links button:hover 
+{
+    background: lavender;
+    color: purple;
+    transform: none;
+    box-shadow: none;
+}
+
+.hero
+{
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero-content 
+{
+    max-width: 650px;
+}
+
+.hero-tag 
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: lavender;
+    color: purple;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 
+{
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    color: indigo;
+}
+
+.hero h1 span 
+{
+    color: purple;
+}
+
+.hero-content > p:not(.hero-tag) 
+{
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: slategray;
+}
+
+.hero-buttons 
+{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-buttons button 
+{
+    width: auto;
+    margin: 0;
+    padding: 14px 25px;
+}
+
+#heroLoginButton 
+{
+    background: mediumslateblue;
+}
+
+#heroLoginButton:hover 
+{
+    background: purple;
+}
+
+#heroRegisterButton 
+{
+    background: white;
+    color: purple;
+    border: 1px solid plum;
+}
+
+#heroRegisterButton:hover 
+{
+    background: lavender;
+    box-shadow: none;
+}
+
+.hero-card 
+{
+    width: 320px;
+    padding: 35px;
+    background: white;
+    border: 1px solid plum;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(75, 0, 130, 0.12);
+}
+
+.hero-icon 
+{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background: mediumslateblue;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero-card h3 
+{
+    margin-bottom: 12px;
+    font-size: 21px;
+    color: indigo;
+}
+
+.hero-card p 
+{
+    color: slategray;
+    line-height: 1.6;
+}
+
+.about-section,
+.features-section,
+.steps-section 
+{
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 30px;
+}
+
+.about-section 
+{
+    text-align: center;
+}
+
+.section-tag 
+{
+    margin-bottom: 12px;
+    color: purple;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.about-section h2,
+.features-section h2,
+.steps-section h2 
+{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: indigo;
+}
+
+.section-text 
+{
+    max-width: 750px;
+    margin: auto;
+    color: slategray;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.features-section 
+{
+    text-align: center;
+}
+
+.features-grid 
+{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card 
+{
+    padding: 30px 22px;
+    text-align: left;
+    background: white;
+    border: 1px solid plum;
+    border-radius: 16px;
+    transition: 0.25s;
+}
+
+.feature-card:hover 
+{
+    transform: translateY(-6px);
+    border-color: mediumslateblue;
+    box-shadow: 0 15px 35px rgba(75, 0, 130, 0.12);
+}
+
+.feature-icon 
+{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: lavender;
+    color: purple;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.feature-card h3 
+{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: indigo;
+}
+
+.feature-card p 
+{
+    color: slategray;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.steps-section 
+{
+    text-align: center;
+}
+
+.steps-grid 
+{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step-card 
+{
+    padding: 30px;
+    text-align: left;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid plum;
+}
+
+.step-number 
+{
+    margin-bottom: 20px;
+    color: purple;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.step-card h3 
+{
+    margin-bottom: 12px;
+    color: indigo;
+}
+
+.step-card p 
+{
+    color: slategray;
+    line-height: 1.6;
+}
+
+.cta-section 
+{
+    margin: 60px auto;
+    max-width: 1050px;
+    padding: 70px 30px;
+    text-align: center;
+    background: indigo;
+    border-radius: 24px;
+}
+
+.cta-section h2 
+{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 36px;
+}
+
+.cta-section p 
+{
+    margin-bottom: 25px;
+    color: lavender;
+}
+
+.cta-section button 
+{
+    width: auto;
+    margin: 0;
+    padding: 13px 28px;
+    background: mediumslateblue;
+}
+
+.cta-section button:hover 
+{
+    background: mediumpurple;
+}
+
+footer 
+{
+    padding: 45px 20px;
+    text-align: center;
+    background: white;
+    border-top: 1px solid plum;
+}
+
+footer h3 
+{
+    margin-bottom: 10px;
+    color: indigo;
+}
+
+footer p 
+{
+    margin-top: 7px;
+    color: slategray;
+    font-size: 14px;
+}
+
+#registerPage,
+#loginPage,
+#dashboardPage 
+{
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: lavender;
+}
+
+.container 
+{
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid plum;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(75, 0, 130, 0.10);
+}
+
+#registerPage .container,
+#loginPage .container 
+{
+    max-width: 500px;
+}
+
+.container h1 
+{
+    margin-bottom: 30px;
+    text-align: center;
+    color: indigo;
+    font-size: 30px;
+}
+
+.container h2 
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: indigo;
+    font-size: 22px;
+}
+
+label 
+{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select 
+{
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid plum;
+    border-radius: 9px;
+    outline: none;
+    background: ghostwhite;
+    color: indigo;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus 
+{
+    border-color: mediumslateblue;
+    box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.12);
+}
+
+textarea 
+{
+    height: 110px;
+    resize: vertical;
+}
+
+button 
+{
+    width: 100%;
+    padding: 13px 16px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 9px;
+    background: mediumslateblue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover 
+{
+    background: purple;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(75, 0, 130, 0.20);
+}
+
+#message,
+#registerMessage,
+#loginMessage 
+{
+    margin-top: 15px;
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+}
+
+#adminStats 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 25px 0 40px;
+}
+
+.stat-card 
+{
+    padding: 25px 15px;
+    text-align: center;
+    background: ghostwhite;
+    border: 1px solid plum;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(75, 0, 130, 0.08);
+    transition: 0.25s;
+}
+
+.stat-card:hover 
+{
+    transform: translateY(-5px);
+    border-color: mediumslateblue;
+    box-shadow: 0 14px 30px rgba(75, 0, 130, 0.15);
+}
+
+.stat-card h3 
+{
+    margin-bottom: 12px;
+    color: slategray;
+    font-size: 14px;
+}
+
+.stat-card p 
+{
+    color: purple;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#complaintForm 
+{
+    background: white;
+    padding: 28px;
+    border: 1px solid plum;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(75, 0, 130, 0.08);
+}
+
+#complaintForm button 
+{
+    margin-top: 22px;
+}
+
+.filters 
+{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filters input 
+{
+    flex: 1;
+    min-width: 250px;
+}
+
+.filters select 
+{
+    width: 220px;
+}
+
+#complaintsList 
+{
+    display: grid;
+    gap: 18px;
+}
+
+#complaintsList > div 
+{
+    background: white;
+    border: 1px solid plum;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 7px 22px rgba(75, 0, 130, 0.08);
+    transition: 0.25s;
+}
+
+#complaintsList > div:hover 
+{
+    transform: translateY(-3px);
+    border-color: mediumslateblue;
+    box-shadow: 0 12px 28px rgba(75, 0, 130, 0.14);
+}
+
+#complaintsList h3 
+{
+    color: purple;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#complaintsList p 
+{
+    margin: 8px 0;
+    color: slateblue;
+}
+
+#complaintsList strong 
+{
+    color: indigo;
+}
+
+#complaintsList button 
+{
+    width: auto;
+    padding: 9px 16px;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+
+#logoutButton 
+{
+    margin-top: 30px;
+    background: indigo;
+}
+
+#logoutButton:hover 
+{
+    background: purple;
+}
+
+@media (max-width: 850px) 
+{
+    .hero 
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+    }
+
+    .hero-buttons 
+    {
+        justify-content: center;
+    }
+
+    .hero-card 
+    {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .features-grid 
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) 
+{
+
+    .navbar 
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links 
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero h1 
+    {
+        font-size: 42px;
+    }
+
+    .about-section h2,
+    .features-section h2,
+    .steps-section h2,
+    .cta-section h2 
+    {
+        font-size: 28px;
+    }
+
+    .features-grid,
+    .steps-grid 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #adminStats 
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container 
+    {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 450px) 
+{
+
+    .nav-links 
+    {
+        flex-direction: column;
+    }
+
+    .nav-links button 
+    {
+        width: 100%;
+    }
+
+    .hero 
+    {
+        padding: 50px 20px;
+    }
+
+    .hero h1 
+    {
+        font-size: 36px;
+    }
+
+    .hero-buttons 
+    {
+        flex-direction: column;
+    }
+
+    .hero-buttons button 
+    {
+        width: 100%;
+    }
+
+    #adminStats 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .filters 
+    {
+        flex-direction: column;
+    }
+
+    .filters input,
+    .filters select 
+    {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #complaintsList button 
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+#homePage .hero-card 
+{
+    position: relative;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#homePage .hero-card:hover 
+{
+    transform: translateY(-5px);
+    box-shadow: 0 24px 55px rgba(75, 0, 130, .16);
+}
+
+#homePage .hero-card-heading small 
+{
+    display: block;
+    margin-bottom: 5px;
+    color: #8d86a5;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#homePage .hero-card-heading h3 
+{
+    margin-bottom: 18px;
+}
+
+#homePage .hero-complaint 
+{
+    padding: 16px;
+    border: 1px solid #eee8f5;
+    border-radius: 13px;
+    background: #faf9fd;
+}
+
+#homePage .hero-complaint-top 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#homePage .hero-complaint-top strong 
+{
+    color: #4d4868;
+    font-size: 12px;
+}
+
+#homePage #heroStatusBadge 
+{
+    padding: 5px 7px;
+    border-radius: 10px;
+    background: #eeeaff;
+    color: #6d63ad;
+    font-size: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#homePage .hero-complaint p 
+{
+    margin: 8px 0 13px;
+    color: #8a8799;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+#homePage .hero-progress 
+{
+    height: 6px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: #e8e4ef;
+}
+
+#homePage #heroProgressFill 
+{
+    display: block;
+    width: 58%;
+    height: 100%;
+    border-radius: inherit;
+    background: mediumslateblue;
+    transition: width .3s ease;
+}
+
+#homePage .hero-statuses 
+{
+    display: flex;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+#homePage .hero-statuses .hero-status 
+{
+    width: auto;
+    flex: 1;
+    margin: 0;
+    padding: 7px 4px;
+    border: 1px solid #e2dced;
+    border-radius: 7px;
+    background: white;
+    color: #8a8698;
+    font-size: 8px;
+    font-weight: bold;
+    box-shadow: none;
+    transform: none;
+}
+
+#homePage .hero-statuses .hero-status:hover,
+#homePage .hero-statuses .hero-status.active 
+{
+    background: lavender;
+    border-color: #a79bd8;
+    color: #62579d;
+    box-shadow: none;
+    transform: none;
+}
+
+#homePage .hero-card-note 
+{
+    margin-top: 13px;
+    color: #9b97a8;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+#homePage .about-section 
+{
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+#homePage .about-strip 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 35px auto 0;
+    padding: 16px 18px;
+    border: 1px solid #e4ddef;
+    border-radius: 14px;
+    background: rgba(255,255,255,.65);
+}
+
+#homePage .about-stat 
+{
+    min-width: 150px;
+    text-align: center;
+}
+
+#homePage .about-stat strong,
+#homePage .about-stat span 
+{
+    display: block;
+}
+
+#homePage .about-stat strong 
+{
+    margin-bottom: 4px;
+    color: #7b6fc0;
+    font-size: 18px;
+}
+
+#homePage .about-stat span 
+{
+    color: #7f7a8e;
+    font-size: 11px;
+}
+
+#homePage .about-line 
+{
+    width: 45px;
+    height: 1px;
+    background: #d7d0e5;
+}
+
+#homePage .feature-card 
+{
+    cursor: pointer;
+}
+
+#homePage .feature-card.selected-feature 
+{
+    border-color: mediumslateblue;
+    box-shadow: 0 15px 35px rgba(75, 0, 130, .14);
+}
+
+#homePage .feature-hint 
+{
+    display: inline-block;
+    margin-top: 14px;
+    color: #8175c8;
+    font-size: 9px;
+    font-weight: bold;
+    opacity: .8;
+}
+
+#homePage .feature-card.selected-feature .feature-hint::after {
+    content: " ✓";
+}
+
+#homePage .step-card 
+{
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+#homePage .step-card:hover,
+#homePage .step-card.selected-step 
+{
+    transform: translateY(-5px);
+    border-color: mediumslateblue;
+    box-shadow: 0 14px 30px rgba(75,0,130,.11);
+}
+
+#homePage .step-card.selected-step .step-number 
+{
+    color: mediumslateblue;
+}
+
+@media (max-width: 650px) 
+{
+    #homePage .about-strip 
+    {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 13px;
+        max-width: 420px;
+    }
+
+    #homePage .about-stat 
+    {
+        min-width: 0;
+    }
+
+    #homePage .about-line 
+    {
+        width: 55px;
+        margin: 0 auto;
+    }
+
+    #homePage .hero-statuses 
+    {
+        flex-wrap: wrap;
+    }
+
+    #homePage .hero-statuses .hero-status 
+    {
+        min-width: 30%;
+    }
+}
